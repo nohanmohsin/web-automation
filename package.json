@@ -1,0 +1,23 @@
+{
+  "name": "web-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nohanmohsin/web-automation.git"
+  },
+  "author": "alu bhau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nohanmohsin/web-automation/issues"
+  },
+  "homepage": "https://github.com/nohanmohsin/web-automation#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "puppeteer": "^5.5.0"
+  }
+}
