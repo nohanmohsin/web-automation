@@ -18,7 +18,7 @@ const password = process.env.PASSWORD;
     await page.evaluate('window.scrollTo(0, document.body.scrollHeight)');
     await page.waitForTimeout(2000);
     await page.evaluate(()=>document.querySelector('[type="submit"]').click());
-    console.log(":)"); 
+    console.log(":)");
   } catch (error) {
     console.log(error);
   }

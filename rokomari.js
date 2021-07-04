@@ -19,6 +19,10 @@ const email=process.env.EMAIL;
       await page.waitForSelector('#j_username');
       await page.type('#j_username', email);
       await page.type('#j_password', password);
+      await page.evaluate( () => {
+        window.scrollBy(0, 200);
+      });
+      await page.waitForSelector('#loginForm > button');
       await page.click('#loginForm > button');
       await page.waitForSelector('body > div.container-fluid.custom-container.home-page-main-div > section.floating-button > div.btn-wishlist');
       await page.click('body > div.container-fluid.custom-container.home-page-main-div > section.floating-button > div.btn-wishlist');
@@ -26,7 +30,7 @@ const email=process.env.EMAIL;
       let element = await page.$('#my-account > div.container > div > div.col-9 > main > section')
       let value = await page.$eval('#my-account > div.container > div > div.col-9 > main > section > div:nth-child(2) > div > div.my-account-book__meta > p.my-account-book__title.pt-1', node => node.innerText);
       console.log(value);
-      console.log(":)"); 
+      console.log(":)");
     } catch (error) {
       console.log(error);
     }

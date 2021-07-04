@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon startech.js"
+    "start": "nodemon daraz.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "puppeteer": "^5.5.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "playwright": "^1.12.3"
   }
 }
